@@ -1,0 +1,5 @@
+.note-list{
+    display: flex;
+    justify-content: start;
+    gap: 2%;
+}

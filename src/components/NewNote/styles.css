@@ -1,0 +1,40 @@
+.new-note {
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.11);
+    padding-top: 2rem;
+}
+
+input, textarea{
+    padding: .5rem;
+    border-radius: 5px;
+	background: none;
+	border: 1px solid transparent;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    
+}
+
+input:focus, textarea:focus{
+    border: 1px solid #646cff;
+}
+
+input{
+    font-size: 1.2em;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+input::placeholder{
+    font-size: 1.3em;
+    line-height: 1.1;
+    font-weight: 400;
+}
+.note-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: auto;
+}
