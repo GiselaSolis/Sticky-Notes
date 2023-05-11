@@ -3,7 +3,7 @@ import './styles.css' ;
 import Label from '../Label/Label';
 
 
-export default function Note({title, text, deleteNote, id}) {
+export default function Note({title, text, deleteNote, id, label}) {
   return (
     <div className="note">
         <div className="note-head">
@@ -16,7 +16,7 @@ export default function Note({title, text, deleteNote, id}) {
             {text}
         </div>
         <div className='note-footer'>
-            <Label />
+            <Label label={label} />
         </div>
     </div>
   )

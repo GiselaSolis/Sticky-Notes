@@ -1,31 +1,46 @@
+import LinearProgress from "@mui/material/LinearProgress";
 import { SlPlus } from 'react-icons/sl';
+import Select from "react-select";
 import './styles.css';
-import Label from '../Label/Label';
 
-export default function NewNote({handleTitle, handleText, saveHandler, title, text}) {
-    
+
+export default function NewNote({handleTitle, handleText, saveHandler, title, text, handleLabel}) {
+    const charLimit = 200;
+    const charLeft = charLimit - text.length
+
+    const labels = [
+        { value: "task", label: "task" },
+        { value: "reminder", label: "reminder" },
+      ];
 
     return (
-        <div className="note new-note">
+        <div className="new-note">
             <input 
                 type='text' 
                 maxLength="25" 
                 value = {title} 
-                placeholder='Title...' 
+                placeholder='Title' 
                 onChange={handleTitle}>
             </input>
             <textarea
                 cols="10"
-                rows="5"
+                rows="7"
                 placeholder="Type...."
-                maxLength="100"
+                maxLength={charLimit}
                 value={text}
                 onChange={handleText}>
             </textarea>
+
+            <LinearProgress color='secondary' variant="determinate"
+                value={Math.round((100 / charLimit) * charLeft)} />
+            
+           
+            
             <div className="note-footer">
-                <Label />
+                <Select options={labels} handleLabel={e => handleLabel(e)} />
                 <button onClick={saveHandler}><SlPlus /></button>
             </div>
+            
         </div>
   )
 }

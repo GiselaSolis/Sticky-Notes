@@ -1,5 +1,5 @@
 .note-list{
-    display: flex;
-    justify-content: start;
-    gap: 2%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1rem;
 }

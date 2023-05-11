@@ -1,11 +1,11 @@
 import './styles.css'
 
-export default function Label() {
+export default function Label(label) {
     
 
   return (
     <div className="label">
-        important
+        {label}
     </div>
   )
 }

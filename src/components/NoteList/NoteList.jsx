@@ -7,16 +7,21 @@ import './styles.css'
 
 
 export default function NoteList() {
-  const [title, setTitle] = useState(" ");
-  const [text, setText] = useState(" ");
+  const [title, setTitle] = useState("");
+  const [text, setText] = useState("");
   const [notes, setNotes] = useState([]);
-  
+  const [label, setLabel] = useState([])
+
   const handleTitle = (e) => {
     setTitle(e.target.value);
   }
  
   const handleText = (e) =>{
     setText(e.target.value)
+  }
+
+  const handleLabel = (e) => {
+    setLabel(e)
   }
 
   const saveHandler = () => {
@@ -26,13 +31,17 @@ export default function NoteList() {
         id: uuid(),
         title: title,
         text: text,
+        label: label,
       },
     ]);
+
+
     //clear the textarea
-    setText(" ");
+    setText("");
     console.log('text-',text)
-    setTitle(" ");
+    setTitle("");
     console.log("notes", notes)
+    setLabel("")
   };
 
   const deleteNote = (id) => {
@@ -49,7 +58,9 @@ export default function NoteList() {
           id={note.id}
           title={note.title}
           text={note.text}
+          label={note.label}
           deleteNote={deleteNote}
+          
         />
       ))}
 
@@ -59,6 +70,7 @@ export default function NoteList() {
         saveHandler = {saveHandler}
         title = {title}
         text = {text}
+        handleLabel={handleLabel}
          />
     </div>
   )

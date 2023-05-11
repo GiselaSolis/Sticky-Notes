@@ -5,9 +5,8 @@
     border: 1.5px solid rgba(255, 255, 255, 0.326);
     color: #fff;
     padding: 1rem;
-    min-height: 340px;
-    min-width: 300px;
     max-width: 100%;
+    min-height: 340px;
     display: flex;
     flex-direction: column;
     word-wrap: break-word;

@@ -1,13 +1,22 @@
 .new-note {
-    background: transparent;
+    background: rgb(41, 41, 41);
     border: 1.5px solid rgba(255, 255, 255, 0.11);
-    padding-top: 2rem;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    padding: 2rem 1rem 1rem;
+    min-height: 340px;
+    min-width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
 }
 
 input, textarea{
     padding: .5rem;
     border-radius: 5px;
-	background: none;
+	background: rgba(0, 0, 0, 0.089);
 	border: 1px solid transparent;
 	outline: none;
 	-webkit-appearance: none;
