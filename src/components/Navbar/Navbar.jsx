@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <div className='navbar'>
       <div className='logo-container'>
-        <img src="/public/logo.png" alt='logo'/>
+        <img src="./logo.png" alt='logo'/>
       </div>
         
         <ul>
