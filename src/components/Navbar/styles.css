@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+a{
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    transition: background-color 300ms ease;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.39);
+ }
+
+ img{
+    width: 10rem;
+ }
+
+ @media only screen and (max-width: 860px) {
+    .logo-container{ 
+        width: 100%;
+        text-align: center;
+    }
+    li{
+        padding: .5rem 1rem;
+        margin-bottom: .1rem;
+
+    }
+    ul{
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+ } 

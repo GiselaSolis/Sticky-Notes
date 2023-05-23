@@ -1,5 +1,15 @@
 .note-list{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
+    grid-auto-flow: dense;
+    padding-top: 4rem;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .note-list{ 
+        padding-top: 2rem;
+    }
+    
 }
