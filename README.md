@@ -13,10 +13,10 @@ This is a simple Sticky Notes app that allows you to create and organize virtual
 
 <br>
 ## Features
-    - Create new sticky notes with custom titles and content.
-    - Delete unwanted sticky notes.
-    - Responsive design for a seamless experience across different devices.
-    - Local storage support to persist your notes even if you close the app.
+  - Create new sticky notes with custom titles and content.
+  - Delete unwanted sticky notes.
+  - Responsive design for a seamless experience across different devices.
+  - Local storage support to persist your notes even if you close the app.
 <br>
 
 ## Technologies
