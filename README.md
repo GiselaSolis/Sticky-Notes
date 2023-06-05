@@ -12,7 +12,7 @@
 This is a simple Sticky Notes app that allows you to create and organize virtual sticky notes. It provides a responsive user-friendly interface for adding, editing, and deleting notes 🌟
 
 <br>
-#Features
+## Features
     - Create new sticky notes with custom titles and content.
     - Delete unwanted sticky notes.
     - Responsive design for a seamless experience across different devices.
